@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <title>Paint Application</title>
+    </head>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #toolbar{
+            margin: 10px 0;
+        }
+        #canvas{
+            border: 1px solid black;
+        }
+    </style>
+    <body>
+        <h1>Paint Application</h1>
+        <div id="toolbar">
+            <input type="color" id="colorPicker">
+            <select id="penSize">
+                <option value="2">2px</option>
+                <option value="5">5px</option>
+                <option value="10">10px</option>
+                <option value="15">15px</option>
+                <option value="20">20px</option>
+            </select>
+            <button id="erase">Eraser</button>
+            <button id="clear">Clear</button>
+            <button id="save">Save</button>
+        </div>
+        <canvas id="canvas" width="700" height="700"></canvas>
+        <script src="paint1.js"></script>
+    </body>
+</html>
